@@ -1,0 +1,26 @@
+.iframe-map{
+    margin: 20px auto;
+}
+
+.registration-form h1{
+    text-align: center;
+}
+
+.registration-form{
+    margin: auto;
+    padding: 20px;
+    width: 50%;
+}
+
+.breadcrumbs{
+    text-align: center;
+    font-size: 26px;
+}
+
+.breadcrumbs-active{
+    background-color: lightslategrey;
+    border-radius: 50%;
+    padding: 1px 10px;
+    color: white;
+}
+
