@@ -7,6 +7,7 @@
             <div class="breadcrumbs">
                 <span class = "step breadcrumbs-active" id = "step-1">1</span>
                 <span class = "step" id = "step-2">2</span>
+                <span class = "step" id = "step-3">3</span>
             </div>
             <div class="tab" id="tab-1">
                 <div class="mb-3">
@@ -304,9 +305,11 @@
                 <div id="badform" class="alert alert-danger" role="alert" style="display: none;">
                     <span>Your data isn't correct! Fill again.</span>
                 </div>
-                <button type="button" class="btn btn-secondary" id="next">Next</button>
+                <div class="route">
+                    <button type="button" class="btn btn-secondary" id="next-1">Next</button>
+                </div>
             </div>
-            <div class="tab" id="tab-2" style="display: block;">
+            <div class="tab" id="tab-2" style="display: none;">
                 <div class="mb-3">
                     <label for="company" class="form-label">Company</label>
                     <input class="form-control" type="text" name="company" id="company" placeholder="Google Inc.">
@@ -323,8 +326,18 @@
                     <label for="image">Image</label><br>
                     <input type="file" id="image" name="image" accept="image/*">
                 </div>
-                <button type="button" class="btn btn-secondary" id="back">Back</button>
-                <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+                <div class="route">
+                    <button type="button" class="btn btn-secondary" id="back-2">Back</button>
+                    <button type="button" class="btn btn-secondary" id="next-2">Next</button>
+                    <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+                </div>
+            </div>
+            <div class="tab" id="tab-3" style="display: none; text-align: center;">
+                <h3>Share form in socials!</h3>
+                <div class="share-links">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://form/&quote=Check+out+this+Meetup+with+SoCal+AngularJS%21" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20Meetup%20with%20SoCal%20AngularJS%21&url=http://form/" class="fa fa-twitter" target="_blank"></a>
+                </div>
             </div>
         </form>
     </div>

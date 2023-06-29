@@ -36,7 +36,7 @@ jQuery().ready(function () {
         },
     });
 
-    $("#next").click(function () {
+    $("#next-1").click(function () {
         if (v.form()) {
             $(".tab").hide("fast");
             $("#tab-2").show("slow");
@@ -47,10 +47,17 @@ jQuery().ready(function () {
         }
     });
 
-    $("#back").click(function () {
+    $("#back-2").click(function () {
         $(".tab").hide("fast");
         $("#tab-1").show("slow");
         $("#step-1").addClass("breadcrumbs-active");
+        $("#step-2").removeClass("breadcrumbs-active");
+    });
+
+    $("#next-2").click(function () {
+        $(".tab").hide("fast");
+        $("#tab-3").show("slow");
+        $("#step-3").addClass("breadcrumbs-active");
         $("#step-2").removeClass("breadcrumbs-active");
     });
 

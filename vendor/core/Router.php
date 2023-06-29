@@ -10,6 +10,15 @@ class Router{
         self::$routes[$regexp] = $route;
     }
 
+    public static function routes(){
+        return self::$routes;
+    }
+
+    public static function route(){
+        return self::$route;
+    }
+
+
     public static function matchRoutes($url)
     {
         foreach (self::$routes as $pattern => $route) {
@@ -29,6 +38,8 @@ class Router{
         }
         return false;
     }
+
+
     public static function dispatch($url){
         $url = self::removeQueryString($url);
         if(self::matchRoutes($url)){
