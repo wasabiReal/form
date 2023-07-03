@@ -1,13 +1,15 @@
 <div class="container">
-    <div class="iframe-map" style="width: 100%"><iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=7060%20Hollywood%20Blvd,%20Los%20Angeles,%20CA%2090028+(My%20Business%20Name)&amp;t=h&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-            <a href="https://www.maps.ie/distance-area-calculator.html">measure area map</a></iframe></div>
+    <div class="iframe-map" style="width: 100%">
+        <iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=7060%20Hollywood%20Blvd,%20Los%20Angeles,%20CA%2090028+(My%20Business%20Name)&amp;t=h&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            <a href="https://www.maps.ie/distance-area-calculator.html">measure area map</a></iframe>
+    </div>
     <div class="registration-form">
         <h1>To participate in the conference, please fill out the form</h1>
-        <form action="assets/scripts/form.php" method="POST" id="register-form">
+        <form action="" method="POST" id="register-form" enctype="multipart/form-data">
             <div class="breadcrumbs">
-                <span class = "step breadcrumbs-active" id = "step-1">1</span>
-                <span class = "step" id = "step-2">2</span>
-                <span class = "step" id = "step-3">3</span>
+                <span class="step breadcrumbs-active" id="step-1">1</span>
+                <span class="step" id="step-2">2</span>
             </div>
             <div class="tab" id="tab-1">
                 <div class="mb-3">
@@ -20,7 +22,8 @@
                 </div>
                 <div class="mb-3">
                     <label for="birthdate" class="form-label">Birthday</label>
-                    <input type="date" id="birthdate" name="birthdate" value="2000-01-01" min="1900-01-01" max="2011-01-01" required>
+                    <input type="date" id="birthdate" name="birthdate" value="2000-01-01" min="1900-01-01"
+                           max="2011-01-01" required>
                 </div>
                 <div class="mb-3">
                     <label for="fn" class="form-label">Report subject</label>
@@ -29,7 +32,8 @@
                 <div class="mb-3">
                     <label for="country" class="form-label">Country</label>
                     <select name="country" class="form-control" id="country" required>
-                        <option value="0" label="Select a country ... " selected="selected">Select a country ... </option>
+                        <option value="0" label="Select a country ... " selected="selected">Select a country ...
+                        </option>
                         <optgroup id="country-optgroup-Africa" label="Africa">
                             <option value="DZ" label="Algeria">Algeria</option>
                             <option value="AO" label="Angola">Angola</option>
@@ -135,7 +139,9 @@
                             <option value="LC" label="Saint Lucia">Saint Lucia</option>
                             <option value="MF" label="Saint Martin">Saint Martin</option>
                             <option value="PM" label="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
-                            <option value="VC" label="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+                            <option value="VC" label="Saint Vincent and the Grenadines">Saint Vincent and the
+                                Grenadines
+                            </option>
                             <option value="SR" label="Suriname">Suriname</option>
                             <option value="TT" label="Trinidad and Tobago">Trinidad and Tobago</option>
                             <option value="TC" label="Turks and Caicos Islands">Turks and Caicos Islands</option>
@@ -179,7 +185,9 @@
                             <option value="OM" label="Oman">Oman</option>
                             <option value="PK" label="Pakistan">Pakistan</option>
                             <option value="PS" label="Palestinian Territories">Palestinian Territories</option>
-                            <option value="YD" label="People's Democratic Republic of Yemen">People's Democratic Republic of Yemen</option>
+                            <option value="YD" label="People's Democratic Republic of Yemen">People's Democratic
+                                Republic of Yemen
+                            </option>
                             <option value="PH" label="Philippines">Philippines</option>
                             <option value="QA" label="Qatar">Qatar</option>
                             <option value="SA" label="Saudi Arabia">Saudi Arabia</option>
@@ -251,7 +259,9 @@
                             <option value="SE" label="Sweden">Sweden</option>
                             <option value="CH" label="Switzerland">Switzerland</option>
                             <option value="UA" label="Ukraine">Ukraine</option>
-                            <option value="SU" label="Union of Soviet Socialist Republics">Union of Soviet Socialist Republics</option>
+                            <option value="SU" label="Union of Soviet Socialist Republics">Union of Soviet Socialist
+                                Republics
+                            </option>
                             <option value="GB" label="United Kingdom">United Kingdom</option>
                             <option value="VA" label="Vatican City">Vatican City</option>
                             <option value="AX" label="Åland Islands">Åland Islands</option>
@@ -261,7 +271,8 @@
                             <option value="AQ" label="Antarctica">Antarctica</option>
                             <option value="AU" label="Australia">Australia</option>
                             <option value="BV" label="Bouvet Island">Bouvet Island</option>
-                            <option value="IO" label="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                            <option value="IO" label="British Indian Ocean Territory">British Indian Ocean Territory
+                            </option>
                             <option value="CX" label="Christmas Island">Christmas Island</option>
                             <option value="CC" label="Cocos [Keeling] Islands">Cocos [Keeling] Islands</option>
                             <option value="CK" label="Cook Islands">Cook Islands</option>
@@ -269,7 +280,9 @@
                             <option value="PF" label="French Polynesia">French Polynesia</option>
                             <option value="TF" label="French Southern Territories">French Southern Territories</option>
                             <option value="GU" label="Guam">Guam</option>
-                            <option value="HM" label="Heard Island and McDonald Islands">Heard Island and McDonald Islands</option>
+                            <option value="HM" label="Heard Island and McDonald Islands">Heard Island and McDonald
+                                Islands
+                            </option>
                             <option value="KI" label="Kiribati">Kiribati</option>
                             <option value="MH" label="Marshall Islands">Marshall Islands</option>
                             <option value="FM" label="Micronesia">Micronesia</option>
@@ -284,7 +297,9 @@
                             <option value="PN" label="Pitcairn Islands">Pitcairn Islands</option>
                             <option value="WS" label="Samoa">Samoa</option>
                             <option value="SB" label="Solomon Islands">Solomon Islands</option>
-                            <option value="GS" label="South Georgia and the South Sandwich Islands">South Georgia and the South Sandwich Islands</option>
+                            <option value="GS" label="South Georgia and the South Sandwich Islands">South Georgia and
+                                the South Sandwich Islands
+                            </option>
                             <option value="TK" label="Tokelau">Tokelau</option>
                             <option value="TO" label="Tonga">Tonga</option>
                             <option value="TV" label="Tuvalu">Tuvalu</option>
@@ -296,11 +311,13 @@
                 </div>
                 <div class="mb-3">
                     <label for="phone" class="form-label">Phone</label>
-                    <input class="form-control tel" id="phone" type="tel" name="phone" placeholder="+1(555)555-5555" required>
+                    <input class="form-control tel" id="phone" type="tel" name="phone" placeholder="+1(555)555-5555"
+                           required>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input class="form-control" type="text" name="email" id="email" placeholder="alex@gmail.com" required>
+                    <input class="form-control" type="text" name="email" id="email" placeholder="alex@gmail.com"
+                           required>
                 </div>
                 <div id="badform" class="alert alert-danger" role="alert" style="display: none;">
                     <span>Your data isn't correct! Fill again.</span>
@@ -329,16 +346,19 @@
                 <div class="route">
                     <button type="button" class="btn btn-secondary" id="back-2">Back</button>
                     <button type="button" class="btn btn-secondary" id="next-2">Next</button>
-                    <button type="submit" class="btn btn-primary" name="submit">Submit</button>
-                </div>
-            </div>
-            <div class="tab" id="tab-3" style="display: none; text-align: center;">
-                <h3>Share form in socials!</h3>
-                <div class="share-links">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://form/&quote=Check+out+this+Meetup+with+SoCal+AngularJS%21" class="fa fa-facebook" target="_blank"></a>
-                    <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20Meetup%20with%20SoCal%20AngularJS%21&url=http://form/" class="fa fa-twitter" target="_blank"></a>
+                    <button type="submit" class="btn btn-primary" name="submit" id="submit">Submit</button>
                 </div>
             </div>
         </form>
+        <div class="tab" id="tab-3" style="display: none; text-align: center;">
+            <h3>Share form in socials!</h3>
+            <div class="share-links">
+                <?php echo '<a href="https://www.facebook.com/sharer/sharer.php?u=' .  $share['fb'] . '"class="fa fa-facebook" target="_blank"></a>'; ?>
+                <?php echo '<a href="https://twitter.com/intent/tweet?text=' .  $share['tw'] . '"class="fa fa-twitter" target="_blank"></a>'; ?>
+            </div>
+            <div class="members-page">
+                <a href="members" class="btn btn-outline-dark">All members</a>
+            </div>
+        </div>
     </div>
 </div>

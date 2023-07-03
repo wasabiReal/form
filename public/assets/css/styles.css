@@ -23,7 +23,7 @@
 .breadcrumbs-active{
     background-color: lightslategrey;
     border-radius: 50%;
-    padding: 1px 10px;
+    padding: 1px 8px;
     color: white;
 }
 
@@ -40,4 +40,34 @@
 .share-links a{
     text-decoration: none;
     font-size: 62px;
+}
+
+.member-image{
+    width: 100px;
+    height: 100px;
+    object-fit:cover
+}
+
+.members-container{
+    margin: 25px auto;
+}
+
+.members-container h2{
+    border-bottom: 2px solid black;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+table{
+    margin-top: 50px;
+}
+
+.members-page{
+    margin-top: 10%;
+}
+
+.members-page a{
+    text-decoration: none;
+    font-size: 22px;
 }

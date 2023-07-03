@@ -19,17 +19,12 @@ spl_autoload_register(function ($class){
         require_once $file;
     }
 });
+
 new \vendor\core\App;
 
 Router::add('^$', ['controller' => 'Register', 'action' => 'index']);
-Router::add('^(?P<controller>[a-z-]+)/?(?P<action>[a-z-]+)?$');
+Router::add('members', ['controller' => 'Members', 'action' => 'index']);
 
-debug(Router::routes());
 
-if (Router::matchRoutes($query)){
-    debug(Router::route());
-}else{
-    echo '404';
-}
 
 Router::dispatch($query);

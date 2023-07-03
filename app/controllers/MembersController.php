@@ -8,6 +8,9 @@ class MembersController extends AppController {
 
     public function indexAction() {
         $model = new Main;
+        $title = 'Members';
+        $members = $model->findAll();
+        $this->set(compact('title', 'members'));
     }
 
 }
